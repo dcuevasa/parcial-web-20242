@@ -1,0 +1,68 @@
+.userViewModal {
+    background: linear-gradient(to right, rgb(84, 157, 231), rgb(13, 224, 13));
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+#userModal{
+    width: 30%;
+    height: 80%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border-color: transparent;
+    background-color: white;    
+    align-content: center;
+    text-align: center;
+}
+
+
+#userView-image {
+    width: 40%;
+    border-radius: 50%;
+    max-height: 100%;
+}
+
+.userInfoInput{
+    width:80%;
+    background-color: white;
+    height: 30px;
+}
+
+.userInfoLabel{
+    text-align: left !important;
+    padding: 10px;
+    padding-left: 50px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.userInfoDisplay{
+    text-align: left !important;
+    margin-left: 40px;
+    width:80%;
+    padding: 8px;
+    display: flex;
+    justify-content: flex-start;
+    border-color: black;
+    border-style: solid;
+}
+
+.userInfoButton{
+    width:80%;
+    background-color: white;
+    height: 30px;
+    border-color: red;
+}
+
+a {
+    text-decoration: none;
+  }
+  
+  a .userInfoButton {
+    cursor: pointer;
+  }

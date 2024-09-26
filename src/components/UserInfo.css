@@ -1,0 +1,56 @@
+#UserInfo-div {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px;
+}
+
+#UserInfoImage-div {
+    text-align: center;
+    width: 30%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+}
+
+#user-image {
+    width: 13vw;
+    border-radius: 50%;
+    display: block;
+    max-height: 100%;
+    margin-left: 10vw;
+}
+
+#UserInfoText-div {
+    text-align: center;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+#UserInfo-Numbers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.numbers {
+    padding-right: 20px;
+}
+
+
+.UserInfo {
+    height: 30vh;
+    margin-bottom: 100px;
+}
