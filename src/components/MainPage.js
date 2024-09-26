@@ -1,11 +1,9 @@
-import UserInfo from './UserInfo';
-import Images from './Images';
+import UserLogin from './UserLogin';
 
 function MainPage() {
   return (
     <div className="MainPage">
-      <UserInfo/>
-      <Images/>
+      <UserLogin/>
     </div>
   );
 }
