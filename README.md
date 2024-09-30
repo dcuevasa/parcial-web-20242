@@ -16,15 +16,16 @@ Una vez se ingresan los datos que cumplan se utiliza "react-router-dom" para red
 ## Home
 Home en español:
 ![image](https://github.com/user-attachments/assets/7f366494-c9d0-4d47-934e-2e2b735a0bc3)
+![image](https://github.com/user-attachments/assets/1df95352-2967-47d4-8c25-4b7991c991c8)
 Home en ingles:
 ![image](https://github.com/user-attachments/assets/63d30d0e-c29c-40e2-8cfe-3317205a3531)
 ![image](https://github.com/user-attachments/assets/32b838cd-eca7-4580-a75a-c496d16f9b48)
-Se utiliza un API de mockaroo para generar los datos del usuario que se piden dentro de un useEffect y se actualizan con useState, pero mientras se espera a que se recuperen los valores predeterminados son "loading..."
-Los datos de las tarjetas se generan aleatoriamente (distancia y longitud) de manera local.
-Se definen los 3 tipos de tarjeta que hay para las 3 grandes columnas ciclismo, correr y nadar y en estas se pusieron los datos que se repiten entre todos las tarjetas (tipo de tarjeta, titulo, descripcion e imagen)
-La pagina consiste de 1 fila con 3 columnas que corresponden a los tipos de actividad (ciclismo, correr y nadar) y estas son generadas dinamicamente en base a los tipos definidos anteriormente
-Luego, por cada fila de una columna, se generan 2 columnas con una tarjeta de sesión generada en cada una (hay 5 filas en una columna de tipo de actividad y 2 columnas por cada fila, para un total de 10 tarjetas).
-Cada tarjeta tiene la funcionalidad de abrir un Modal con una replica de la tarjeta dentro.
+Se utiliza un API de mockaroo para generar los datos del usuario que se piden dentro de un useEffect y se actualizan con useState, pero mientras se espera a que se recuperen los valores predeterminados son "loading..."\
+Los datos de las tarjetas se generan aleatoriamente (distancia y longitud) de manera local.\
+Se definen los 3 tipos de tarjeta que hay para las 3 grandes columnas ciclismo, correr y nadar y en estas se pusieron los datos que se repiten entre todos las tarjetas (tipo de tarjeta, titulo, descripcion e imagen)\
+La pagina consiste de 1 fila con 3 columnas que corresponden a los tipos de actividad (ciclismo, correr y nadar) y estas son generadas dinamicamente en base a los tipos definidos anteriormente\
+Luego, por cada fila de una columna, se generan 2 columnas con una tarjeta de sesión generada en cada una (hay 5 filas en una columna de tipo de actividad y 2 columnas por cada fila, para un total de 10 tarjetas).\
+Cada tarjeta tiene la funcionalidad de abrir un Modal con una replica de la tarjeta dentro.\
 ## Footer
 ![image](https://github.com/user-attachments/assets/ecf485a2-a1fa-4eae-b3db-327ca95cc209)
 Finalmente esta el footer del usuario que contiene la informacion obtenida anteriormente con el useEffect (su imagen de perfil, su nombre completo y sus mejores tiempos) con iconos generados en svg para facilitar su uso
