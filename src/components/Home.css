@@ -1,0 +1,51 @@
+.HomeFooter {
+  background-color: #01616b;
+  width: 100vw;
+  height: 30vh;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.UserImageDiv {
+  width: 20vh; 
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.UserImage {
+  width: auto;
+  height: 100%;
+  object-fit: cover; 
+  border-radius: 50%;
+}
+
+.UserFooterRow {
+  height: 30vh !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.icon-text-pair {
+  display: flex;
+  align-items: center;
+}
+
+.icon-text-pair svg {
+  margin-right: 10px; 
+}
+
+.UserName{
+  font-size: 3rem;
+  color: white;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.time{
+  color: white;
+}

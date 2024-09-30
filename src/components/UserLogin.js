@@ -1,27 +1,32 @@
 import React, { useState } from 'react';
-import { Modal, Button, Form, Row, Col } from "react-bootstrap";
-import './UserLogin.css';
+import { Modal, Button, Form, Col } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
+
+import './UserLogin.css';
 
 function UserView() {
 
-  let navigate = useNavigate(); 
+  let navigate = useNavigate();
 
+  const { t } = useTranslation();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  function goToImages(){
-    console.log(email);
-    console.log(password);
-    console.log(email);
-    console.log(password);
-    if(email=="usertest@gmailcom"){
-      if(password=="banana"){
-        let path = '/images'; 
-        navigate(path);
-      }
-    }  
+  function goToImages() {
+    if (validarCorreo(email) && password.length === 8) {
+      let path = '/home';
+      navigate(path);
+    }
+    else {
+      if (!validarCorreo(email)) alert("Correo no valido");
+      if (password.length !== 8) alert("Contraseña no valida");
+    }
+  }
 
+  function validarCorreo(correo) {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(correo);
   }
 
   const handleEmail = (event) => {
@@ -37,32 +42,32 @@ function UserView() {
   };
 
   return (
-    <div className="user-view-page">
-      <Modal show={true} id="userModal" className="userLoginModal">
-        <Modal.Header>
-          <p><b>Log in</b></p>
+    <div className="UserLogin">
+      <Modal show={true} className="UserLoginModal" centered>
+        <Modal.Header className="border-0 UserLoginModalHeader">
+          <p><b>{t('LogIn')}</b></p>
         </Modal.Header>
-        <Modal.Body>
-          <div className="UserView-Info">
-              <>
-                <Form.Group as={Row}>
-                  <Form.Label column sm="2" className='userInfoLabel'>Email:</Form.Label>
-                  <Col sm="10">
-                    <Form.Control type="text" value={email} onChange={handleEmail} className="userInfoInput"/>
-                  </Col>
-                </Form.Group>
-                <Form.Group as={Row}>
-                  <Form.Label column sm="2"   className='userInfoLabel'>Password:</Form.Label>
-                  <Col sm="10">
-                    <Form.Control type="password" value={password} onChange={handlePassword} className="userInfoInput"/>
-                  </Col>
-                </Form.Group>
-              </>
+        <Modal.Body className='rounded-0 UserLoginModalBody'>
+          <div>
+            <>
+              <Form.Group>
+                <Form.Label column sm="2">{t('Email')}</Form.Label>
+                <Col sm="10" className="w-100">
+                  <Form.Control type="text" value={email} onChange={handleEmail} />
+                </Col>
+              </Form.Group>
+              <Form.Group>
+                <Form.Label column sm="2">{t('Password')}</Form.Label>
+                <Col sm="10" className="w-100">
+                  <Form.Control type="password" value={password} onChange={handlePassword} />
+                </Col>
+              </Form.Group>
+            </>
           </div>
         </Modal.Body>
         <br></br>
-        <Modal.Footer className="user-footer">            
-          <Button className="userInfoButton" onClick={goToImages}>Guardar Cambios</Button>
+        <Modal.Footer className='justify-content-start border-0 UserLoginModalFooter'>
+          <Button variant="primary" onClick={goToImages} className='rounded-1'>{t('SaveChanges')}</Button>
         </Modal.Footer>
       </Modal>
     </div>

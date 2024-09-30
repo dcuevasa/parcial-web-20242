@@ -1,80 +1,34 @@
-.userLoginModal {
-    background-image: url("https://images.unsplash.com/photo-1534289692684-c02577d5560d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    height: 100vh;
-    width: 100vw;
-    margin: 0px;
-    padding: 0px;
-    align-content: center;
-    text-align: center;
-    overflow: hidden;
+.UserLoginModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1534289692684-c02577d5560d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  z-index: 1050;
+  border-radius: 0px;
+  border-color: transparent;
 }
 
-#userModal{
-    width: 30%;
-    height: 40%;
-    margin: auto;
-    padding: 20px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-    border-color: transparent;
-    background-color: white;    
-    align-content: center;
-    text-align: center;
-    overflow: hidden;
+.UserLoginModalHeader {
+  color: rgb(78, 78, 78);
+  font-size: 1.5rem;
+  padding-bottom: 0px !important;
 }
 
-
-#userView-image {
-    width: 40%;
-    border-radius: 50%;
-    max-height: 100%;
+.UserLoginModal .modal-content {
+  border-radius: 0 !important;
+  border-color: transparent !important;
 }
 
-.userInfoInput{
-    width:80%;
-    background-color: white;
-    height: 30px;
+.UserLoginModalBody {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
 }
 
-.userInfoLabel{
-    text-align: left !important;
-    padding: 10px;
-    padding-left: 50px;
-    display: flex;
-    justify-content: flex-start;
+.UserLoginModalFooter {
+  padding-top: 0px !important;
+  padding-bottom: 10px !important;
+  text-align: left;
 }
-
-.userInfoDisplay{
-    text-align: left !important;
-    margin-left: 40px;
-    width:80%;
-    padding: 8px;
-    display: flex;
-    justify-content: flex-start;
-    border-color: black;
-    border-style: solid;
-}
-
-.userInfoButton{
-    width:40%;
-    background-color: skyblue;
-    height: 30px;
-    border-color: transparent;
-    border-radius: 30px;
-}
-
-.user-footer{
-    justify-content: flex-start;
-    text-align: left !important;
-    align-content: left;
-    text-align: left;
-    margin-left: 10%;
-
-}
-
-a {
-    text-decoration: none;
-  }
-  
-  a .userInfoButton {
-    cursor: pointer;
-  }
